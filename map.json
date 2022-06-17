@@ -483,7 +483,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/innovation\/"
+                 "value":"<embed SRC='www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/innovation\/'><\/embed> "
                 }],
          "type":"tilelayer",
          "visible":true,
