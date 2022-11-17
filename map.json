@@ -4166,15 +4166,15 @@
          "tilewidth":32
         }, 
         {
-         "columns":125,
+         "columns":177,
          "firstgid":17649,
-         "image":"C:\/Users\/zarya\/OneDrive\/Desktop\/Banner.jpg",
-         "imageheight":1250,
-         "imagewidth":4000,
+         "image":"..\/003\/tilesets\/eTeach_Veranstaltungen.png",
+         "imageheight":3200,
+         "imagewidth":5692,
          "margin":0,
          "name":"Banner_NEw",
          "spacing":0,
-         "tilecount":0,
+         "tilecount":17700,
          "tileheight":32,
          "tilewidth":32
         }],
