@@ -483,7 +483,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/watch?v=isjv8CWIzIA&list=RDCMUCaMlUU7RBGlzeAP6VK5QErQ&start_radio=1&t=355s"
+                 "value":"https:\/\/leonardo.ai\/"
                 }],
          "type":"tilelayer",
          "visible":true,
