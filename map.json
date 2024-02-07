@@ -483,7 +483,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.deepl.com\/de\/translator"
+                 "value":"https:\/\/web.descript.com\/"
                 }],
          "type":"tilelayer",
          "visible":true,
