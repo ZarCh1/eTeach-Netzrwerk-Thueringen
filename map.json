@@ -483,7 +483,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.perplexity.ai\/"
+                 "value":"https:\/\/firefly.adobe.com\/"
                 }],
          "type":"tilelayer",
          "visible":true,
