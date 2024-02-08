@@ -481,9 +481,14 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"allowApi",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
+                 "name":"url",
                  "type":"string",
-                 "value":"https:\/\/web.descript.com\/"
+                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
                 }],
          "type":"tilelayer",
          "visible":true,
