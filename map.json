@@ -486,9 +486,9 @@
                  "value":true
                 }, 
                 {
-                 "name":"url",
+                 "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
+                 "value":"https:\/\/web.descript.com\/"
                 }],
          "type":"tilelayer",
          "visible":true,
