@@ -827,7 +827,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
+                 "value":"https:\/\/youtube.com"
                 }],
          "type":"tilelayer",
          "visible":true,
