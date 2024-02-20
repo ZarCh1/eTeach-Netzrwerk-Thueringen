@@ -820,9 +820,14 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"SameSite",
+                 "type":"string",
+                 "value":"None"
+                }, 
+                {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/veranstaltungen\/"
+                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -3845,7 +3850,7 @@
          "value":"script.js"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.10.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -4185,6 +4190,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.8",
+ "version":"1.10",
  "width":150
 }
