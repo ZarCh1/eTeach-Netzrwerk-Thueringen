@@ -481,6 +481,16 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"Content-Security-Policy",
+                 "type":"string",
+                 "value":"default-src https:"
+                }, 
+                {
+                 "name":"SameSite",
+                 "type":"string",
+                 "value":"None"
+                }, 
+                {
                  "name":"allowApi",
                  "type":"bool",
                  "value":true
@@ -488,7 +498,17 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/web.descript.com\/"
+                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
+                }, 
+                {
+                 "name":"openWebsiteAllowApi",
+                 "type":"string",
+                 "value":"true"
+                }, 
+                {
+                 "name":"policy",
+                 "type":"string",
+                 "value":"fullscreen"
                 }],
          "type":"tilelayer",
          "visible":true,
