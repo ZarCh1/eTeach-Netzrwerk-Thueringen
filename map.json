@@ -1187,11 +1187,6 @@
                  "name":"openTab",
                  "type":"string",
                  "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/tutoreneteach\/"
-                }, 
-                {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/tutoreneteach\/"
                 }],
          "type":"tilelayer",
          "visible":true,
