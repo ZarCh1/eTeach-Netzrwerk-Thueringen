@@ -501,6 +501,11 @@
                  "value":"https:\/\/app.leonardo.ai\/auth\/login"
                 }, 
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
+                }, 
+                {
                  "name":"openWebsiteAllowApi",
                  "type":"string",
                  "value":"true"
@@ -1178,6 +1183,11 @@
          "name":"UrlTutoren",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openTab",
+                 "type":"string",
+                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/tutoreneteach\/"
+                }, 
                 {
                  "name":"openWebsite",
                  "type":"string",
