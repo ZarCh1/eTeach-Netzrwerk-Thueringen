@@ -501,11 +501,6 @@
                  "value":"https:\/\/app.leonardo.ai\/auth\/login"
                 }, 
                 {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
-                }, 
-                {
                  "name":"openWebsiteAllowApi",
                  "type":"string",
                  "value":"true"
