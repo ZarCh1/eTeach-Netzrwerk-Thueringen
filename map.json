@@ -678,6 +678,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"openTab",
+                 "type":"string",
+                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/kursangebote\/"
+                }, 
+                {
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/kursangebote\/"
@@ -1021,6 +1026,11 @@
          "name":"UrlTools",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openTab",
+                 "type":"string",
+                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/themen-und-tools\/"
+                }, 
                 {
                  "name":"openWebsite",
                  "type":"string",
