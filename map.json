@@ -850,6 +850,11 @@
                  "value":"None"
                 }, 
                 {
+                 "name":"openTab",
+                 "type":"string",
+                 "value":"https:\/\/www.youtube.com\/"
+                }, 
+                {
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/youtube.com"
