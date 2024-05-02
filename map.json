@@ -501,11 +501,6 @@
                  "value":"https:\/\/app.leonardo.ai\/auth\/login"
                 }, 
                 {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
-                }, 
-                {
                  "name":"openWebsiteAllowApi",
                  "type":"string",
                  "value":"true"
@@ -681,11 +676,6 @@
                  "name":"openTab",
                  "type":"string",
                  "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/kursangebote\/"
-                }, 
-                {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/kursangebote\/"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -858,11 +848,6 @@
                  "name":"openTab",
                  "type":"string",
                  "value":"https:\/\/www.youtube.com\/"
-                }, 
-                {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/youtube.com"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1028,11 +1013,6 @@
          "properties":[
                 {
                  "name":"openTab",
-                 "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/themen-und-tools\/"
-                }, 
-                {
-                 "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/themen-und-tools\/"
                 }],
@@ -1366,7 +1346,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"openTab",
                  "type":"string",
                  "value":"https:\/\/www.eteach-thueringen.de\/"
                 }],
@@ -1533,7 +1513,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"openTab",
                  "type":"string",
                  "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/ueber-das-netzwerk\/"
                 }],
