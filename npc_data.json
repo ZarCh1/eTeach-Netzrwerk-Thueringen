@@ -1,0 +1,18 @@
+{
+    "npcs": [
+        {
+            "name": "Receptionist",
+            "dialogue": [
+                "Hello there!",
+                "How can I help you?"
+            ]
+        },
+        {
+            "name": "Manager",
+            "dialogue": [
+                "Welcome to our office!",
+                "Feel free to ask me anything."
+            ]
+        }
+    ]
+}
