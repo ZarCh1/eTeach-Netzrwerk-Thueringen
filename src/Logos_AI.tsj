@@ -1,0 +1,14 @@
+{ "columns":17,
+ "image":"C:\/Users\/juanc\/Downloads\/Logos_Sprite_sheet.png",
+ "imageheight":245,
+ "imagewidth":574,
+ "margin":0,
+ "name":"Logos_AI",
+ "spacing":0,
+ "tilecount":119,
+ "tiledversion":"1.10.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.10"
+}
