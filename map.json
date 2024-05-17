@@ -489,34 +489,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"Content-Security-Policy",
-                 "type":"string",
-                 "value":"default-src https:"
-                }, 
-                {
-                 "name":"SameSite",
-                 "type":"string",
-                 "value":"None"
-                }, 
-                {
-                 "name":"allowApi",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/app.leonardo.ai\/auth\/login"
-                }, 
-                {
-                 "name":"openWebsiteAllowApi",
-                 "type":"string",
-                 "value":"true"
-                }, 
-                {
-                 "name":"policy",
-                 "type":"string",
-                 "value":"fullscreen"
+                 "value":"https:\/\/www.eteach-thueringen.de\/impulsprojekte\/"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -2019,7 +1994,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/kursangebote\/"
+                 "value":"https:\/\/www.eteach-thueringen.de\/kursangebote\/?edstart=2024-05-01&edview=v1"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -2184,14 +2159,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"SameSite",
-                 "type":"string",
-                 "value":"None"
-                }, 
-                {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/youtube.com"
+                 "value":"https:\/\/www.eteach-thueringen.de\/veranstaltungen\/"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -2358,7 +2328,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/themen-und-tools\/"
+                 "value":"https:\/\/www.eteach-thueringen.de\/themen\/tools-und-settings\/"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -2525,7 +2495,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/qualifizierung\/tutoreneteach\/"
+                 "value":"https:\/\/www.eteach-thueringen.de\/tutoreneteach\/"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -2856,6 +2826,11 @@
          "name":"UrlUberDasNetzwerk",
          "opacity":1,
          "properties":[
+                {
+                 "name":"openTab",
+                 "type":"string",
+                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/ueber-das-netzwerk\/"
+                }, 
                 {
                  "name":"openWebsite",
                  "type":"string",
