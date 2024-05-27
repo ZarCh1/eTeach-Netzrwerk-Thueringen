@@ -2827,14 +2827,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openTab",
-                 "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/ueber-das-netzwerk\/"
-                }, 
-                {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.uni-weimar.de\/de\/universitaet\/studium\/elearning-labor\/medienbereichertes-lehren-und-lernen\/ueber-das-netzwerk\/"
+                 "value":"https:\/\/www.eteach-thueringen.de\/netzwerk\/"
                 }],
          "type":"tilelayer",
          "visible":true,
