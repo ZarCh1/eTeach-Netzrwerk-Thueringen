@@ -1,5 +1,7 @@
 "use strict";
 exports.__esModule = true;
+/// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
+//import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";    
 var scripting_api_extra_1 = require("@workadventure/scripting-api-extra");
 console.log('Script started successfully');
 var currentPopup = undefined;
@@ -156,7 +158,7 @@ var leave2 = WA.room.onLeaveLayer("myLayer2").subscribe(function () {
     }
 });
 // Open the popup when we enter a given zone
-var doorPopup3;
+var doorPopup3 = undefined;
 var popupText3 = "Welche ist eines der Schwerpunktthemen des Jahres im eTeach-Netzwerk?";
 var popupAnswers3 = ["KI", " Tools, Medientechnik", "Hybride Lehre"];
 var answer3 = "Falsch! ist KI";
