@@ -1,6 +1,6 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 //import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra } from "../node_modules/@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
