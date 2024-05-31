@@ -1,8 +1,6 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 //import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";    
-declare const WorkAdventureScriptingApiExtra: any;
-
-const { bootstrapExtra } = WorkAdventureScriptingApiExtra;
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -24,7 +22,7 @@ WA.onInit().then(() => {
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
-    }).catch((e: any) => console.error(e));
+    }).catch(e => console.error(e));
     console.log('This is actually being modified !!!!!');
 }).catch(e => console.error(e));
 
