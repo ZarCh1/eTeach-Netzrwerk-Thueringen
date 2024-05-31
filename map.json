@@ -8689,6 +8689,17 @@
                  "width":173.333,
                  "x":2761.3335,
                  "y":426
+                }, 
+                {
+                 "height":75,
+                 "id":23,
+                 "name":"popupMessageBox",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":139,
+                 "x":2361,
+                 "y":2830
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -9180,7 +9191,7 @@
          "y":0
         }],
  "nextlayerid":98,
- "nextobjectid":23,
+ "nextobjectid":25,
  "orientation":"orthogonal",
  "properties":[
         {
