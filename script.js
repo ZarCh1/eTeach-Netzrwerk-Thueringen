@@ -1,6 +1,6 @@
 "use strict";
-exports.__esModule = true;
-var scripting_api_extra_1 = require("@workadventure/scripting-api-extra");
+export const __esModule = true;
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.log('Script started successfully');
 var currentPopup = undefined;
 // Waiting for the API to be ready
@@ -14,7 +14,7 @@ WA.onInit().then(function () {
     });
     WA.room.onLeaveLayer('clockZone').subscribe(closePopUp);
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
-    (0, scripting_api_extra_1.bootstrapExtra)().then(function () {
+    (0, bootstrapExtra)().then(function () {
         console.log('Scripting API Extra ready');
     })["catch"](function (e) { return console.error(e); });
     console.log('This is actually being modified !!!!!');
