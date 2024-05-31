@@ -10,7 +10,7 @@ let currentPopup: any = undefined;
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ', WA.player.tags)
-
+    
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
