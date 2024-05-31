@@ -1,5 +1,5 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";
+//import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -175,7 +175,7 @@ let leave2 = WA.room.onLeaveLayer("myLayer2").subscribe(() => {
 });
 
 // Open the popup when we enter a given zone
-let doorPopup3: Popup;
+let doorPopup3: any = undefined;
 let popupText3 = "Welche ist eines der Schwerpunktthemen des Jahres im eTeach-Netzwerk?";
 let popupAnswers3 = ["KI", " Tools, Medientechnik", "Hybride Lehre"];
 let answer3 = "Falsch! ist KI";
