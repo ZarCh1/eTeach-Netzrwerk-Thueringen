@@ -24,6 +24,9 @@ jobs:
 
       - name: "Install dependencies"
         run: npm install
+      
+      - name: "Install extra api scripting"
+        run: npm install --save @workadventure/scripting-api-extra
 
       - name: "Build scripts"
         run: npm run build
