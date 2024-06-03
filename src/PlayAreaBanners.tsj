@@ -1,0 +1,14 @@
+{ "columns":16,
+ "image":"assets\/PlaygroundBanner.png",
+ "imageheight":199,
+ "imagewidth":512,
+ "margin":0,
+ "name":"PlayAreaBanners",
+ "spacing":0,
+ "tilecount":96,
+ "tiledversion":"1.10.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.10"
+}
