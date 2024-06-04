@@ -2,17 +2,18 @@
 //import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";    
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 import { UIWebsite } from "@workadventure/iframe-api-typings";
+import { Popup } from "@workadventure/iframe-api-typings";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
+let currentPopup: Popup | null;
 let currentPrompt: UIWebsite;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ', WA.player.tags)
-    
+
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
@@ -32,11 +33,10 @@ WA.onInit().then(() => {
 
 
 function closePopUp(currentPopup: any) {
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-        leaveLayerSubscription.unsubscribe();
-    }
+
+    currentPopup?.close();
+    currentPopup = null;
+    //leaveLayerSubscription.unsubscribe();
 }
 
 let popupText = "Wie viele Hochschulen und Universitäten sind Teil des eTeach-Netzwerks? ";
@@ -111,69 +111,82 @@ let popupRectangle5 = "popupRectangle5";
 let leaveLayerSubscription: any = undefined;
 //let currentPopup1  : any = undefined;
 
-async function openPopup(doorLayer: string, enablePopupLayer: string, colliderDoorLayer: string, popupRectangle: string, popupText: string, popupAnswers: string[], answer: string, second_text: string) {
-        currentPopup = await WA.ui.openPopup(popupRectangle, popupText, [{
-                label: popupAnswers[0],
+async function openPopup(doorLayer: string, enablePopupLayer: string, colliderDoorLayer: string, popupRectangle: string, popupText: string, popupAnswers: string[], answer: string, second_text: string, subscriptionIndex: number) {
+    if (currentPopup) return;
+    currentPopup = WA.ui.openPopup(popupRectangle, popupText, [{
+        label: popupAnswers[0],
+        className: "primary",
+        callback: () => {
+            currentPopup?.close();
+            currentPopup = null;
+            currentPopup = WA.ui.openPopup(popupRectangle, second_text, [{
+                label: "Schließen",
                 className: "primary",
-                callback: (popup) => {
-                    closePopUp(popup);
-                    popup = WA.ui.openPopup(popupRectangle, second_text, [{
-                        label: "Schließen",
-                        className: "primary",
-                        callback: (popup) => {
-                            
-                            closePopUp(popup);
-                        }
-                    }]);
+                callback: () => {
+                    currentPopup?.close();
+                    currentPopup = null;
                 }
-            },
-            {
-                label: popupAnswers[1],
+            }]);
+        }
+    },
+    {
+        label: popupAnswers[1],
+        className: "primary",
+        callback: () => {
+            currentPopup?.close();
+                    currentPopup = null;
+            currentPopup = WA.ui.openPopup(popupRectangle, answer, [{
+                label: "Tür öffnen",
                 className: "primary",
-                callback: (popup) => {
-                    closePopUp(popup);
-                    currentPopup = WA.ui.openPopup(popupRectangle, answer, [{
-                        label: "Tür öffnen",
-                        className: "primary",
-                        callback: (popup) => {
-                            closePopUp(popup);
-                            WA.room.hideLayer(enablePopupLayer);
-                            WA.room.hideLayer(doorLayer);
-                            WA.room.hideLayer(colliderDoorLayer);
-                            // unsuscribe.
-                            leaveLayerSubscription.unsubscribe();
-                            //WA.room.showLayer(enablePopupLayer3);
-                        }
-                    }]);
+                callback: () => {
+                    currentPopup?.close();
+                    currentPopup = null;
+                    WA.room.hideLayer(enablePopupLayer);
+                    WA.room.hideLayer(doorLayer);
+                    WA.room.hideLayer(colliderDoorLayer);
+                    // unsubscribe
+                    if (subscriptionIndex === 1) {
+                        subscription1.unsubscribe();
+                    } else if (subscriptionIndex === 2) {
+                        subscription2.unsubscribe();
+                    } else if (subscriptionIndex === 3) {
+                        subscription3.unsubscribe();
+                    } else if (subscriptionIndex === 4) {
+                        subscription4.unsubscribe();
+                    } else if (subscriptionIndex === 5) {
+                        subscription5.unsubscribe();
+                    }
                 }
-            }
-        ]);
-    
-    WA.room.onLeaveLayer(enablePopupLayer).subscribe( () => {
-         closePopUp(currentPopup);
-         //currentPopup.close();
+            }]);
+        }
+    }
+    ]);
+
+    WA.room.onLeaveLayer(enablePopupLayer).subscribe(() => {
+        currentPopup?.close();
+        currentPopup = null;
     });
 }
 
 // Example usage
-leaveLayerSubscription = WA.room.area.onEnter(enablePopupLayer1).subscribe(async () => {
-    await openPopup(doorLayer1, enablePopupLayer1, colliderDoorLayer1, popupRectangle, popupText, popupAnswers, answer, second_text);
+const subscription1 = WA.room.onEnterLayer(enablePopupLayer1).subscribe(async () => {
+    await openPopup(doorLayer1, enablePopupLayer1, colliderDoorLayer1, popupRectangle, popupText, popupAnswers, answer, second_text, 1);
 });
 
-leaveLayerSubscription = WA.room.onEnterLayer(enablePopupLayer2).subscribe(async () => {
-    await openPopup(doorLayer2, enablePopupLayer2, colliderDoorLayer2, popupRectangle2, popupText2, popupAnswers2, answer2, second_text2);
+const subscription2 = WA.room.onEnterLayer(enablePopupLayer2).subscribe(async () => {
+    await openPopup(doorLayer2, enablePopupLayer2, colliderDoorLayer2, popupRectangle2, popupText2, popupAnswers2, answer2, second_text2, 2);
 });
 
-leaveLayerSubscription = WA.room.onEnterLayer(enablePopupLayer3).subscribe(async () => {
-    await openPopup(doorLayer3, enablePopupLayer3, colliderDoorLayer3, popupRectangle3, popupText3, popupAnswers3, answer3, second_text3);
+const subscription3 = WA.room.onEnterLayer(enablePopupLayer3).subscribe(async () => {
+    await openPopup(doorLayer3, enablePopupLayer3, colliderDoorLayer3, popupRectangle3, popupText3, popupAnswers3, answer3, second_text3, 3);
 });
 
-leaveLayerSubscription = WA.room.onEnterLayer(enablePopupLayer4).subscribe(async () => {
-    await openPopup(doorLayer4, enablePopupLayer4, colliderDoorLayer4, popupRectangle4, popupText4, popupAnswers4, answer4, second_text4);
+const subscription4 = WA.room.onEnterLayer(enablePopupLayer4).subscribe(async () => {
+    await openPopup(doorLayer4, enablePopupLayer4, colliderDoorLayer4, popupRectangle4, popupText4, popupAnswers4, answer4, second_text4, 4);
 });
 
-leaveLayerSubscription = leaveLayerSubscription = WA.room.onEnterLayer(enablePopupLayer5).subscribe(async () => {
-    await openPopup(doorLayer5, enablePopupLayer5, colliderDoorLayer5, popupRectangle5, popupText5, popupAnswers5, answer5, second_text5);
+const subscription5 = leaveLayerSubscription = WA.room.onEnterLayer(enablePopupLayer5).subscribe(async () => {
+    await openPopup(doorLayer5, enablePopupLayer5, colliderDoorLayer5, popupRectangle5, popupText5, popupAnswers5, answer5, second_text5, 5);
 });
 
 
